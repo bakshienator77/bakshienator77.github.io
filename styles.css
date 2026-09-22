@@ -18,11 +18,11 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.35; }
 h1 { font-size: 36px; font-weight: 400; letter-spacing: -.8px; }
 h2 { font-size: 22px; font-weight: 500; }
 h3, h4 { font-size: 16px; font-weight: 600; }
-.page-header { text-align: center; margin-bottom: 32px; }
-.header-banner { margin: 0 0 24px; }
-.header-banner a { display: block; border-radius: 10px; overflow: hidden; }
-.header-banner img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 20%; }
-.header-banner figcaption { text-align: right; }
+.page-header { text-align: center; margin: 0 auto 24px; width: 100%; }
+.header-banner { margin: 0 auto 16px; width: 100%; }
+.header-banner a { display: block; height: clamp(144px, 25vw, 220px); border-radius: 10px; overflow: hidden; }
+.header-banner img { display: block; width: 150%; max-width: none; height: 100%; margin-left: -50%; object-fit: cover; object-position: center 72%; }
+.header-banner figcaption { text-align: center; margin-top: 6px; }
 .specialty { margin: 7px 0 3px; color: var(--muted); }
 .intro { display: grid; grid-template-columns: 218px 1fr; align-items: start; gap: 34px; }
 .portrait { display: block; width: 100%; height: auto; border-radius: 10px; }
