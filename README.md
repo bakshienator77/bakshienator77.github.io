@@ -10,7 +10,7 @@ From the repository root, run `make site`, then visit <http://localhost:8000>. Y
 
 - `index.html`: biography, experience, publications, and links. Each major work has an anchor (`#tuesday-labs`, `#arena`, `#guts`, `#star`) for direct sharing.
 - `styles.css`: responsive layout and typography.
-- `assets/nikhil.jpg`: existing portrait copied from `Nikhil.jpg` without alteration.
+- `assets/portrait-square.png`: square portrait prepared from the user-supplied photo using the image-editing tool; used in the profile and social preview. The earlier `assets/nikhil.jpg` is retained as an unused original.
 - `assets/guts.jpg`, `assets/star.jpg`: thumbnails from the user's YouTube videos `9ZgbL5IEkAE` and `Fs1lv4y6Nq8`.
 - `assets/Nikhil_Angad_Bakshi_Resume.pdf`: local resume snapshot. Refresh with `make site-assets` after updating the resume.
 
