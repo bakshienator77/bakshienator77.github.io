@@ -38,3 +38,5 @@ The GUTS GIF is derived from the supplied field clip (360×202, 10 fps). The STA
 `contact.js` decodes an obfuscated email address and restores the header/footer contact links in the browser. The source HTML contains no plaintext email or mailto link. Without JavaScript, contact links lead to LinkedIn. This deters basic HTML scrapers, but the address remains visible to visitors and JavaScript-capable crawlers. The public resume has its own contact information and is unaffected.
 
 STAR previews are a paired group: the original `images/map-example.gif` above `images/target-detection-example.gif`, both from the STAR repository. `star-map-still.png` is a first-frame fallback for reduced-motion preferences.
+
+The presentation banner sits outside the content column and spans the viewport. CSS displays the bottom 70% of the original photo in a centered sharp panel, with a blurred copy filling the remaining width. Banner height is responsive (160–240 px); the source image is unchanged.

@@ -19,10 +19,14 @@ h1 { font-size: 36px; font-weight: 400; letter-spacing: -.8px; }
 h2 { font-size: 22px; font-weight: 500; }
 h3, h4 { font-size: 16px; font-weight: 600; }
 .page-header { text-align: center; margin: 0 auto 24px; width: 100%; }
-.header-banner { margin: 0 auto 16px; width: 100%; }
-.header-banner a { display: block; height: clamp(144px, 25vw, 220px); border-radius: 10px; overflow: hidden; }
-.header-banner img { display: block; width: 150%; max-width: none; height: 100%; margin-left: -50%; object-fit: cover; object-position: center 72%; }
-.header-banner figcaption { text-align: center; margin-top: 6px; }
+.header-banner { margin: 0; width: 100%; }
+.banner-stage { display: flex; justify-content: center; height: clamp(160px, 20vw, 240px); overflow: hidden; position: relative; isolation: isolate; background: #302a2b; }
+.banner-stage::before { content: ""; position: absolute; inset: -32px; z-index: -1; background: url("assets/icra-2023-presentation.jpeg") center 72% / cover no-repeat; filter: blur(24px); }
+.banner-stage:focus-visible { outline-offset: -4px; }
+/* Show the bottom 70% of the original without changing the source asset. */
+.banner-focus { display: block; position: relative; height: 100%; aspect-ratio: 1600 / 842.8; max-width: 100%; overflow: hidden; }
+.banner-focus img { display: block; position: absolute; bottom: 0; width: 100%; height: 142.857143%; object-fit: cover; }
+.header-banner figcaption { text-align: center; margin: 6px 12px 0; }
 .specialty { margin: 7px 0 3px; color: var(--muted); }
 .intro { display: grid; grid-template-columns: 218px 1fr; align-items: start; gap: 34px; }
 .portrait { display: block; width: 100%; height: auto; border-radius: 10px; }
