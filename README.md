@@ -4,13 +4,12 @@ A static first version in Deepak Pathak's compact homepage format, with industry
 
 ## Preview
 
-From the repository root, run `make site`, then visit <http://localhost:8000>. You can also open `website/index.html` directly. The STAR preview loads a YouTube player when clicked; without JavaScript it opens YouTube normally. The GUTS field clip is a native MP4 player with controls, muted audio, looping, and no autoplay. Its full research video remains linked on YouTube.
+From the repository root, run `make site`, then visit <http://localhost:8000>. You can also open `website/index.html` directly. Research entries show non-clickable animated GIFs alongside the papers. Full videos open through ordinary text links. Reduced-motion preferences select static previews instead.
 
 ## Editing
 
 - `index.html`: biography, experience, publications, and links. Each major work has an anchor (`#tuesday-labs`, `#arena`, `#guts`, `#star`) for direct sharing.
 - `styles.css`: responsive layout and typography.
-- `site.js`: progressive enhancement for video playback.
 - `assets/nikhil.jpg`: existing portrait copied from `Nikhil.jpg` without alteration.
 - `assets/guts.jpg`, `assets/star.jpg`: thumbnails from the user's YouTube videos `9ZgbL5IEkAE` and `Fs1lv4y6Nq8`.
 - `assets/Nikhil_Angad_Bakshi_Resume.pdf`: local resume snapshot. Refresh with `make site-assets` after updating the resume.
@@ -30,3 +29,5 @@ Canonical URL, social-preview metadata, `robots.txt`, and `sitemap.xml` use the 
 - `assets/guts-demo.mp4`: 16-second GUTS field clip from the owner's `call of duty icra 2023.mp4`, encoded as H.264 at 854×480 without audio (about 2.7 MB); originals are unchanged.
 - `assets/guts-demo-poster.jpg`: frame from that clip at 12 seconds.
 - `assets/icra-2023-presentation.jpeg`: the owner's photo presenting GUTS at ICRA 2023, included unchanged with a caption and full-size link.
+
+The GUTS GIF is derived from the supplied field clip (360×202, 10 fps). The STAR GIF is the unchanged `images/target-detection-example.gif` from the STAR repository's `master` branch. The earlier MP4 and thumbnails are retained as source/fallback assets. There are no inline video players or expanding previews.

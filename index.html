@@ -15,7 +15,6 @@
   <meta property="og:description" content="Building learning systems for robots, from research to working products. Industry work, selected research, and demos.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -113,11 +112,11 @@
 
         <article class="research-row featured" id="guts">
           <figure class="demo-media">
-            <video controls muted loop playsinline preload="none" poster="assets/guts-demo-poster.jpg" width="854" height="480" aria-label="GUTS field demonstration: approaching and detecting a target" aria-describedby="guts-demo-caption">
-              <source src="assets/guts-demo.mp4" type="video/mp4">
-              <a href="assets/guts-demo.mp4">Watch the GUTS field demonstration</a>.
-            </video>
-            <figcaption id="guts-demo-caption">A target detection in the field · 16-second clip, no audio</figcaption>
+            <picture>
+              <source media="(prefers-reduced-motion: reduce)" srcset="assets/guts-demo-poster.jpg">
+              <img src="assets/guts-demo.gif" width="360" height="202" alt="GUTS field demonstration showing a target being approached and detected" loading="lazy">
+            </picture>
+            <figcaption>A target detection in the field.</figcaption>
           </figure>
           <div>
             <h3><a href="https://arxiv.org/abs/2304.02075">GUTS: Generalized Uncertainty-Aware Thompson Sampling for Multi-Agent Active Search</a></h3>
@@ -135,12 +134,12 @@
         </article>
 
         <article class="research-row" id="star">
-          <div class="media">
-            <a class="video-preview" href="https://www.youtube.com/watch?v=Fs1lv4y6Nq8" data-video="Fs1lv4y6Nq8" data-title="STAR — CoRL 2023 research video" aria-label="Watch STAR research video">
-              <img src="assets/star.jpg" alt="Preview of the STAR terrain-aware active search video" width="480" height="360" loading="lazy">
-              <span class="play-label" aria-hidden="true">▶ Watch video</span>
-            </a>
-          </div>
+          <figure class="demo-media">
+            <picture>
+              <source media="(prefers-reduced-motion: reduce)" srcset="assets/star.jpg">
+              <img src="assets/star-demo.gif" width="600" height="338" alt="Target-detection demonstration from the STAR project repository" loading="lazy">
+            </picture>
+          </figure>
           <div>
             <h3><a href="https://proceedings.mlr.press/v229/bakshi23a.html">Stealthy Terrain-Aware Multi-Agent Active Search</a></h3>
             <p class="authors"><strong>Nikhil Angad Bakshi</strong>, Jeff Schneider</p>
