@@ -7,7 +7,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
-body { margin: 0; background: #F5F7FA; color: var(--text); font: 15px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body { margin: 0; background: #F3F6F2; color: var(--text); font: 15px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .page { max-width: 880px; margin: 0 auto; padding: 24px 32px 24px; }
 a { color: var(--link); text-decoration: none; text-underline-offset: 3px; }
 a:hover { color: #9a4b15; text-decoration: underline; }
@@ -29,7 +29,7 @@ h3, h4 { font-size: 16px; font-weight: 600; }
 .header-banner figcaption { text-align: center; margin: 6px 12px 0; }
 .specialty { margin: 7px 0 3px; color: var(--muted); }
 .intro { display: grid; grid-template-columns: 218px 1fr; align-items: start; gap: 34px; }
-.portrait { display: block; width: 100%; height: auto; border-radius: 10px; }
+.portrait { display: block; width: 100%; height: auto; border: 12px solid #74593D; border-radius: 10px; }
 .profile-links { text-align: center; font-size: 14px; line-height: 1.9; margin-top: 13px; }
 .profile-links span, .resource-links span, footer span { color: #8b8b8b; padding: 0 4px; }
 .bio p:last-child { margin-bottom: 0; }
