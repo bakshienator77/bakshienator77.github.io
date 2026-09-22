@@ -32,3 +32,7 @@ Canonical URL, social-preview metadata, `robots.txt`, and `sitemap.xml` use the 
 - `assets/icra-2023-presentation.jpeg`: the owner's photo presenting GUTS at ICRA 2023, used as the header banner with a caption and full-size link. The responsive CSS crops the display; the image file is unchanged.
 
 The GUTS GIF is derived from the supplied field clip (360×202, 10 fps). The STAR GIF is the unchanged `images/target-detection-example.gif` from the STAR repository's `master` branch. The earlier MP4 and thumbnails are retained as source/fallback assets. There are no inline video players or expanding previews.
+
+## Email display
+
+`contact.js` decodes an obfuscated email address and restores the header/footer contact links in the browser. The source HTML contains no plaintext email or mailto link. Without JavaScript, contact links lead to LinkedIn. This deters basic HTML scrapers, but the address remains visible to visitors and JavaScript-capable crawlers. The public resume has its own contact information and is unaffected.
