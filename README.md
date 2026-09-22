@@ -29,6 +29,6 @@ Canonical URL, social-preview metadata, `robots.txt`, and `sitemap.xml` use the 
 
 - `assets/guts-demo.mp4`: 16-second GUTS field clip from the owner's `call of duty icra 2023.mp4`, encoded as H.264 at 854×480 without audio (about 2.7 MB); originals are unchanged.
 - `assets/guts-demo-poster.jpg`: frame from that clip at 12 seconds.
-- `assets/icra-2023-presentation.jpeg`: the owner's photo presenting GUTS at ICRA 2023, included unchanged with a caption and full-size link.
+- `assets/icra-2023-presentation.jpeg`: the owner's photo presenting GUTS at ICRA 2023, used as the header banner with a caption and full-size link. The responsive CSS crops the display; the image file is unchanged.
 
 The GUTS GIF is derived from the supplied field clip (360×202, 10 fps). The STAR GIF is the unchanged `images/target-detection-example.gif` from the STAR repository's `master` branch. The earlier MP4 and thumbnails are retained as source/fallback assets. There are no inline video players or expanding previews.
