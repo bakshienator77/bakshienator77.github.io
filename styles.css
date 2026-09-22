@@ -59,9 +59,6 @@ details li { margin-bottom: 7px; }
 .award { color: #845214; font-weight: 600; }
 .resource-links { font-size: 14px; }
 .demo-media { margin: 0; }
-.star-views { display: grid; gap: 12px; }
-.star-views figure { margin: 0; }
-.star-views figcaption { margin-top: 4px; }
 .demo-media img { display: block; width: 100%; height: auto; background: #111; }
 figcaption { font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 8px; }
 .thesis { margin: 16px 0 0; font-size: 14px; }

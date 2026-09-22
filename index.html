@@ -164,22 +164,13 @@
         </article>
 
         <article class="research-row" id="star">
-          <div class="demo-media star-views" role="group" aria-label="Paired STAR demonstration views">
-            <figure>
-              <picture>
-                <source media="(prefers-reduced-motion: reduce)" srcset="assets/star-map-still.png">
-                <img src="assets/star-map.gif" width="600" height="338" alt="Overhead map of the same STAR target-detection scene shown below" loading="lazy">
-              </picture>
-              <figcaption>Overhead map</figcaption>
-            </figure>
-            <figure>
-              <picture>
-                <source media="(prefers-reduced-motion: reduce)" srcset="assets/star.jpg">
-                <img src="assets/star-demo.gif" width="600" height="338" alt="Target-detection view paired with the overhead map above" loading="lazy">
-              </picture>
-              <figcaption>Target-detection view</figcaption>
-            </figure>
-          </div>
+          <figure class="demo-media">
+            <picture>
+              <source media="(prefers-reduced-motion: reduce)" srcset="assets/star-paired-still.png">
+              <img src="assets/star-paired.gif" width="360" height="406" alt="Synchronized STAR views: overhead map above and target detection below" loading="lazy">
+            </picture>
+            <figcaption>Overhead map (top) and target detection (bottom), synchronized.</figcaption>
+          </figure>
           <div>
             <h3><a href="https://proceedings.mlr.press/v229/bakshi23a.html">Stealthy Terrain-Aware Multi-Agent Active Search</a></h3>
             <p class="authors"><strong>Nikhil Angad Bakshi</strong>, Jeff Schneider</p>
