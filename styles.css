@@ -91,3 +91,6 @@ footer { text-align: center; padding: 25px 0 4px; font-size: 13px; }
   .work-row, .research-row { break-inside: avoid; }
   a { color: inherit; }
 }
+
+#unscramble-email { border: 0; padding: 0; background: none; color: var(--link); font: inherit; text-decoration: underline; cursor: pointer; }
+#email-address { overflow-wrap: anywhere; }
