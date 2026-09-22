@@ -7,7 +7,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
-body { margin: 0; background: #fff; color: var(--text); font: 15px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body { margin: 0; background: #FAF8F4; color: var(--text); font: 15px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .page { max-width: 880px; margin: 0 auto; padding: 24px 32px 24px; }
 a { color: var(--link); text-decoration: none; text-underline-offset: 3px; }
 a:hover { color: #9a4b15; text-decoration: underline; }
