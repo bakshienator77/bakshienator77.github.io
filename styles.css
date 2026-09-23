@@ -94,3 +94,20 @@ footer { text-align: center; padding: 25px 0 4px; font-size: 13px; }
 
 #unscramble-email { border: 0; padding: 0; background: none; color: var(--link); font: inherit; text-decoration: underline; cursor: pointer; }
 #email-address { overflow-wrap: anywhere; }
+
+.company-logo { display: block; width: 160px; max-width: 100%; height: 50px; object-fit: contain; object-position: left center; margin-bottom: 12px; }
+.company-logo-tuesday { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 85px; height: auto; }
+.company-logo-tuesday img { display: block; width: 85px; height: auto; }
+.company-logo-tuesday .labs-wordmark { width: 36px; }
+
+.education-grid { display: grid; gap: 27px; margin-top: 28px; }
+.education-entry { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 30px; align-items: center; }
+.education-entry + .education-entry { border-top: 1px solid #ededed; padding-top: 27px; }
+.education-entry p { margin: 0; }
+.education-logo { display: block; width: 76px; height: 76px; max-width: 100%; object-fit: contain; object-position: left center; }
+@media (max-width: 640px) { .education-entry { grid-template-columns: 1fr; gap: 12px; } }
+
+.education-cmu-logos { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; min-height: 76px; }
+.education-logo-ri { display: block; width: 240px; max-width: 100%; height: auto; }
+
+.logo-link { display: block; width: fit-content; max-width: 100%; }
