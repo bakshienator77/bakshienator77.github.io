@@ -1,42 +1,38 @@
-# Personal website
+# Nikhil Angad Bakshi — personal website
 
-A static first version in Deepak Pathak's compact homepage format, with industry work first. Layout and code are original; the reference is credited in the footer. No framework or build dependency is needed.
+Live at <https://bakshienator77.github.io/>. This repository is the sole source for the static website; GitHub Pages publishes the root of `main` after each push.
 
-## Preview
+## Preview and edit
 
-From the repository root, run `make site`, then visit <http://localhost:8000>. You can also open `website/index.html` directly. Research entries show non-clickable animated GIFs alongside the papers. Full videos open through ordinary text links. Reduced-motion preferences select static previews instead.
+Run `make preview`, then open <http://127.0.0.1:8000/>. Edit files here directly and refresh the browser. No build or package installation is needed.
 
-## Editing
+- `index.html`: biography, industry work, publications, highlights, and education.
+- `styles.css`: background colour, portrait border, typography, and responsive layout.
+- `contact.js`: scrambled email with an explicit unscramble button; revealed address is non-clickable.
+- `assets/portrait-night-square.png`: current portrait and social preview.
+- `assets/logos/`: company and university SVGs; sources recorded in `SOURCES.md`.
+- `assets/guts-demo.gif` and `assets/star-paired.gif`: research previews. STAR combines both views into one synchronized animation. Reduced-motion preferences use static images; full videos remain text links.
+- `assets/icra-2023-presentation.jpeg`: full-width banner source, cropped and padded through CSS.
 
-- `index.html`: biography, experience, publications, and links. Each major work has an anchor (`#tuesday-labs`, `#arena`, `#guts`, `#star`) for direct sharing.
-- `styles.css`: responsive layout and typography.
-- `assets/portrait-square.png`: square portrait prepared from the user-supplied photo using the image-editing tool; used in the profile and social preview. The earlier `assets/nikhil.jpg` is retained as an unused original.
-- `assets/guts.jpg`, `assets/star.jpg`: thumbnails from the user's YouTube videos `9ZgbL5IEkAE` and `Fs1lv4y6Nq8`.
-- `assets/Nikhil_Angad_Bakshi_Public_Resume.pdf`: website resume with the private phone contact removed before rendering. Build with `make site-assets`.
-- `assets/Nikhil_Angad_Bakshi_Resume.pdf`: compatibility copy of the same public PDF so the previously shared URL also serves a phone-free document.
+After editing `styles.css` or `contact.js`, update the corresponding `?v=` value in `index.html` to bust browser caches when publishing. Review changes, commit, and push from this repository. Verify GitHub Pages has finished deploying before checking the live site.
 
-Employment claims follow `resume.html`. The quantitative Arena benchmark, ambiguous publication count, ISER year, and field-test area are omitted pending the checks in `presence/website-plan.md`. The industry entries use text until public demo media is supplied. The hosting target is https://bakshienator77.github.io/.
+## Public resume
 
-## GitHub Pages publishing
+The resume source and privacy filter live in the separate sibling `../resume` repository. To refresh the website PDFs:
 
-The contents of this directory are published at <https://bakshienator77.github.io/> from the root of the public `bakshienator77/bakshienator77.github.io` repository on its `main` branch. GitHub Pages rebuilds after pushes to that branch.
+```sh
+make -C ../resume export-public-resume
+```
 
-To update, run `make site-assets` in the resume repository, copy this directory's contents into a checkout of the website repository, review the diff, commit, and push. Include both generated resume PDFs, even though they are ignored in the resume builder repository. Never copy the root private resume PDF into the website. Do not copy the full resume builder repository.
+Review and commit both generated PDFs here:
 
-Canonical URL, social-preview metadata, `robots.txt`, and `sitemap.xml` use the free GitHub Pages address. Search Console ownership verification can be added separately.
+- `assets/Nikhil_Angad_Bakshi_Public_Resume.pdf`
+- `assets/Nikhil_Angad_Bakshi_Resume.pdf` (legacy URL, identical phone-free content)
 
-## Research media
+Never copy the private PDF from the resume repository root. The export command does not deploy automatically.
 
-- `assets/guts-demo.mp4`: 16-second GUTS field clip from the owner's `call of duty icra 2023.mp4`, encoded as H.264 at 854×480 without audio (about 2.7 MB); originals are unchanged.
-- `assets/guts-demo-poster.jpg`: frame from that clip at 12 seconds.
-- `assets/icra-2023-presentation.jpeg`: the owner's photo presenting GUTS at ICRA 2023, used as the header banner with a caption and full-size link. The responsive CSS crops the display; the image file is unchanged.
+## Local drafts
 
-The GUTS GIF is derived from the supplied field clip (360×202, 10 fps). The STAR GIF is the unchanged `images/target-detection-example.gif` from the STAR repository's `master` branch. The earlier MP4 and thumbnails are retained as source/fallback assets. There are no inline video players or expanding previews.
+`.local/` is ignored by Git and should not be published. It holds historical planning notes, profile/LinkedIn drafts, and unused logo originals from the repository split. These notes may describe superseded designs. The profile README's source of truth is the separate `bakshienator77/bakshienator77` repository.
 
-## Email display
-
-`contact.js` decodes an obfuscated email address and restores the header/footer contact links in the browser. The source HTML contains no plaintext email or mailto link. Without JavaScript, contact links lead to LinkedIn. This deters basic HTML scrapers, but the address remains visible to visitors and JavaScript-capable crawlers. The public resume has its own contact information and is unaffected.
-
-STAR previews are a paired group: the original `images/map-example.gif` above `images/target-detection-example.gif`, both from the STAR repository. `star-map-still.png` is a first-frame fallback for reduced-motion preferences.
-
-The presentation banner sits outside the content column and spans the viewport. CSS displays the bottom 70% of the original photo in a centered sharp panel, with a blurred copy filling the remaining width. Banner height is responsive (160–240 px); the source image is unchanged.
+The layout is inspired by Deepak Pathak's homepage and credited in the footer.

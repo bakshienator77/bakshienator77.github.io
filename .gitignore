@@ -1,0 +1,4 @@
+
+# Local planning drafts and unused source assets
+.local/
+.DS_Store
