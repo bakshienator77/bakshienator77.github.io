@@ -111,3 +111,8 @@ footer { text-align: center; padding: 25px 0 4px; font-size: 13px; }
 .education-logo-ri { display: block; width: 240px; max-width: 100%; height: auto; }
 
 .logo-link { display: block; width: fit-content; max-width: 100%; }
+
+.paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.paper-button { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border: 1px solid #bdc9bc; border-radius: 5px; background: #fff; color: var(--link); font-size: 13px; line-height: 1.5; }
+.paper-button svg { width: 15px; height: 15px; flex: none; }
+.paper-button:hover { background: #e8eee6; border-color: #74593d; text-decoration: none; }
