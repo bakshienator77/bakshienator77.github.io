@@ -36,3 +36,7 @@ Never copy the private PDF from the resume repository root. The export command d
 `.local/` is ignored by Git and should not be published. It holds historical planning notes, profile/LinkedIn drafts, and unused logo originals from the repository split. These notes may describe superseded designs. The profile README's source of truth is the separate `bakshienator77/bakshienator77` repository.
 
 The layout was inspired by Deepak Pathak's homepage.
+
+## Versions
+
+See [VERSIONS.md](VERSIONS.md) for fixed website and public-resume snapshots.
