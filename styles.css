@@ -116,3 +116,15 @@ footer { text-align: center; padding: 25px 0 4px; font-size: 13px; }
 .paper-button { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border: 1px solid #bdc9bc; border-radius: 5px; background: #fff; color: var(--link); font-size: 13px; line-height: 1.5; }
 .paper-button svg { width: 15px; height: 15px; flex: none; }
 .paper-button:hover { background: #e8eee6; border-color: #74593d; text-decoration: none; }
+
+.banner-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
+.banner-launch .banner-stage::before { background-image: url("assets/voxel-launch-presentation.jpg"); background-position: center; }
+.banner-launch .banner-focus { aspect-ratio: 4160 / 2774; }
+.banner-launch .banner-focus img { height: 100%; }
+.company-demo { margin: 18px 0 0; max-width: 260px; }
+.company-demo img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.company-demo figcaption { margin-top: 5px; }
+@media (max-width: 640px) {
+  .banner-gallery { grid-template-columns: 1fr; gap: 10px; }
+  .banner-gallery .banner-stage { height: 160px; }
+}
